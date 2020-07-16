@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Fabien Ryckoort
+# This file is distributed under the same license as the Kazaplan package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kazaplan \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-09 12:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../<openapi>:1 be22f2e42d634fe88cb1edaf3affdb6d
+msgid "**Health check**"
+msgstr ""
+
+#: ../../<openapi> 06aee2041d174ab9b5c28ac7117191dd
+#: 0804d4e160b442438a071eeedc411cf6 0a17bc4252c54f8ba3e0b15a89e9eea5
+#: 0e8c37c3593646c4b82962b24618df24 1015ec2122754f5e911abcf82b692833
+#: 1d2016f07ede4099806c73d3b4699f89 1f56a76fc6ac4fc4b7e7ef87eb8a5ec3
+#: 2572c14b194a431a85a01f5101bced97 288b7831147c4394bf1591a8de4be684
+#: 2f7a0e354e8044ed81c5f909ac5cb703 3b0759d9c0ab4a16826deccb770fb4ab
+#: 428b78d278e7408aa30b9c6ff442f9ca 4bca0a4150374227b25611465dc87e42
+#: 53a3aead83054cc18718ee4c0439eb93 5a2a1773f4bb4a3c9ca38cee8146148e
+#: 5f1aaa711b504895bb33b94695ea6899 680417b9e68e42f5aa84b1ffe7848e58
+#: 68644be6e46a4aa2af9d5fa0f5d79eda 6e90535cd3094ee0bd7651916c0414a3
+#: 765b82f26b854f8c8611dcc1771223fb 786b195aab5b4c798684c0c3b4b03f02
+#: 78ed42c37dfb4acfb655391eef271e93 79e14c47029b4eefbd6e9df9a072db3a
+#: 7b1ec4dc07034d9b852723bcb1c0defc 80eb7090bae14575ba2f65a458ebcab6
+#: 8547d326e9914f31a7d5d8cbce5ed5ad 85f7da2b54bd4c4cbe94a7ba324fbd80
+#: 8bebbdfc42054e179f929adb31b6a214 8d14be4a3c58423aa73c3d0948fe7500
+#: 8ec4494a53d04e3fbaea3bf5a9da9d60 a3df56d7ff0c4894a0599bbeba3f0993
+#: a6791dc6688848a78058af6219cb7c23 a7112b24b41f485e99c7842c311d884d
+#: a8579f48faa047ca97552d5aa5afebf8 ab0a4ad148364f37b1ed9d34fe43523d
+#: bcfebd3e118e404c9839cb5b53021ae1 c51cbe42e48b4af59c15c44e0ca40bdb
+#: caefd5e3d6cf4065833882a74e88838e cb860480d16c4f2285ccb8c20bf6109b
+#: cdf1e86b02fa400ab0b14fa96a751fe3 d8e427d6e86b48beb2cb4fea4b21fc25
+#: db46adeb85c5414aa4e77947d9548099 e13c5e509c604e8d822acaf56d4d9083
+#: e92bba97d98a4d63ad77b511c53f3660 ea3f06eec5054fc2908e0de2a35b9089
+#: ee4f8b3c42434dcc9aba8bda67975da8 ee5dd4e6af3a407fa1cfd7205d202d66
+#: f39d32ce61c64caf8b84f92ed5d480a6 f41e3e39e85f419f8731dbca74d8515e
+#: f4715a0578fe4ced8e8fc83f002e95a4 f50999a58a7c44daa3c9600865ed79a0
+#: f52c1ec5799b47d0a0d4e255677993b1 f5337254117b40d5b6e7005b026820cb
+#: fc549d239bdf4139b600b38bfd0f079a
+msgid "Status Codes"
+msgstr ""
+
+#: ../../<openapi>:1 31e82f5b39d44a6d826a348872cf40be
+msgid "**Create many Credit**"
+msgstr ""
+
+#: ../../<openapi>:1 0154703faf7546e4b43b7c4c33fc7b01
+msgid "**Retrieve Credit counters**"
+msgstr ""
+
+#: ../../<openapi> 049f67e585464ecfb27f42acb372f54f
+#: 0d93eb87f5524cb7b86240408b670805 1dc566766af04626bbf78dafc4243a5c
+#: 1e458478e0b14522a4afec2a355c9038 1f59e75e63a54d5fbff83e0c22d4ab4d
+#: 205b0bfd989a46aebd38f1b5f1fe64d2 22fbb8369c2e467ba4cd1088f185586f
+#: 2a700a40b6bd4e58946466131006e507 392e9940c6844b3f822d50b89820bf7e
+#: 3ed000becfe34c8e9b1196e83175eef8 4656fc3a98874017a0d58b0a89cc0564
+#: 4e274e02a4c64445bf3c3d75bc36b482 5081873451ed43d49b31052e8ce27d09
+#: 52687a8b70364e93a715b5343b0a6af0 54bfb7fe81f645edba2e38c3d07c7502
+#: 5b8ece293bc94229bcf844f5cc3fd4cb 5f151f4dc14b44e2b382a56982d435d0
+#: 6ec4fc7bb9d0433caa6bbcf01dad752a 7071389ee7084c7db967fa08c08a10b1
+#: 7b9f49f5679f4e8587c426972deeb167 7f707ad7f9ae40759d6d2233a27c62ce
+#: 90cc8e0676514cabaa4979f8ac7b9c85 91419203a8444f0e90f60088fb0b4d26
+#: 9822fb4dd0744ba78a71d047d3797a4d 9d30e5d32f6b4a84a4d9f2c191b6fe6e
+#: 9e459b7bd95a4429b51eaf6f0eef1dd9 ad5e543aad54449aa033a647e4de3a6f
+#: b04dcc9847f6484192006e461355f45e b47d1f4a14e24430ba9d7ed259032865
+#: bf991715d42845a6a79abfbe5ecb88d9 c1c08af3cf284f488251eda4ba875379
+#: c677bc110bfe445db682eab95b61058e c6a6b347758848088814fbdf59c9939d
+#: cee1d216a4cb4eb593f86b6922e464fd cf4f69045bb14931b5b6ab16f47ec12a
+#: e86c22f7fc434f0eb793f462b440ac17 f52bbbc22d874960b0eee7c0cfb451a7
+#: f7f2dfeafabd48d8ae5c25ff4772573b ff84b380800f49cf9469bf677288ab32
+msgid "Parameters"
+msgstr ""
+
+#: ../../<openapi>:1 308732693bf84332b8e57d82c560ff59
+msgid "**Retrieve all Countries**"
+msgstr ""
+
+#: ../../<openapi> eca4337562314cc7815c4cbce838242b
+msgid "Request Headers"
+msgstr ""
+
+#: ../../<openapi> 016a4c964b09454dba4b0fe5f73956d8
+#: 02ff2a0de226441c93256db5917aa22b 0e81dfe187364636a238a6a28d21688e
+#: 19e1d0d194564f7fbda714763e08d420 1aaaa6c66f214d3d92679c683c31dc64
+#: 2002d7624c6a4c8493e6dc8684476d48 211c1c5f2ab14009a81f2368424d9abf
+#: 286a3eb622d646319b7fee1a427cd340 340fbf9beaa1446ea3dc47817e717543
+#: 3da88ee0d2744284b9bad25a3ec35f51 3f69d3735613436e845d6ee727d39a4b
+#: 4df99ffb9c1c4f38b0f8c62fb0f5fd98 4e3075e84ba8423ba844fbb8c3d6f13b
+#: 4f35bab0491244b1ba8a32e9023e43e7 712fde0b46444742a86658dfb2488047
+#: 79f4238b5a3d49b1a60ed4baf7dc5c92 a3d6b15670b3410b96c946645deeb8ee
+#: a82a201050974aabbafadda456e6d029 b6a704b291f74fb7ba29d9c325f2fd73
+#: c456ba7abace471388c557817fdbc003 cf03f402a4dd4dbc87e57bb6a5d08e4c
+#: dc5d640e02804249bed4b2aae9ed5269 e0aa1ba41b8d4e9fb62de688b06ecb90
+#: eaeee5b6683c4c978dec5229472f0e1b
+msgid "Query Parameters"
+msgstr ""
+
+#: ../../<openapi>:1 e2670f02cce74a9182bfb16e078a192b
+msgid "This route returns always all countries"
+msgstr ""
+
+#: ../../<openapi>:1 73bf5cb76d4541f7848ca7fbe11a0d87
+msgid "**Create one Media**"
+msgstr ""
+
+#: ../../<openapi>:1 544e7395171b4cafb74fe0a8b06b82d3
+#: dc0690a0e2ab49758ae07bdf19770a8c
+msgid "**Retrieve many Media**"
+msgstr ""
+
+#: ../../<openapi>:1 025f05eb0baa48368aa985e65dadfc09
+#: 08a57a76027549bdb9da1c66acc50b10 1326c8b66a384bec9dc217a167f83d82
+#: 150b91e38c354c34b3a7e26d030f8561 1719a0c9f04745e5830a52115eaa4e3d
+#: 1df653aa24a943bca26aff87ec74f950 36da62a2a4d04df18250f820d9c4df5e
+#: 4e51ad0f86ce46bbacbe69a98a62614e 68dfe0d062914b7196d843688ad45945
+#: 6f0aafd32fff4a8bb462d55f44a79584 783d3d0d4cef480ea61fb1929136cb2e
+#: 9def56d357884e049dee63d65113c91c a4a64b638bc24ae98ab68fba909ac28c
+#: b9e00743e30d43df8a0490d445ea2569 bd7bd8816d7e4705adb8c0e5cd6d0c1b
+#: be89e2e972a843829c3366bbd207027c c3e5d516153b45db95a090576be9242d
+#: c5f76a9cc5b24418bdddd572a444db9f c6c8ca5b58e9488eac6f3e8f1244fef6
+#: c6ce274e232d42f4b7fa1141206c4bd9 cb847c5760414f1d9e2a7f58df91e9bd
+#: eb9b8f7fbf4945dda805229ed56749b3 f718f0d4c4ce41a89e2ec605fb109680
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Selects resource fields. "
+":raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#select\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 19fa7d82f4a1424da0e951cbb76707fe
+#: 32fe79b6e74e4eedb170cdad1f35f0c0 5d33ce30ef5e4c7682c4433fdd7ffb51
+#: 5e2bbb335fb0439681b77d30d95b3c51 61d27bcbc9714cc4bacb8b11615bacd1
+#: 86bda90dacad4b1b9f543cec4ff9fe02 87f12b56dad3448a9ae2d0dd822f8157
+#: a3c672abff0a4006a4210ef1d3b9c1df af6ece2df70045b7a4660786e3bc5cb4
+#: d761b899907a446b94ef69e49ee0a38e d7bc41d110b24df7b86e21dd77ad900e
+#: fd2475401bfe433095de11d60e32467d
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Adds search condition. "
+":raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#search\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 0927f87a23d240e39885e6a60a702c39
+#: 0e5b11555db243b896bfa276d21d74db 2bb34509b8a84f5a8dbb9f4fe0f1d251
+#: 2ec4b6d9e95e4d19b22ba7f0ca117781 385b07f31e05432ba582c796d73219dd
+#: 41085415623e46ac8d8ce4f49d39faa3 5957db0678164d3693a58abeecea6a6b
+#: 93ee01c15b354aa9bbd1ab328c724c8b bcaa941604bc4d0e88f48f7956e1c6e0
+#: bf82492f31ba45cbac2710aead39f387 ce32ed0a374a414a9c2b085754900121
+#: dc0b7b347513466fb36cf8b9428c85f7
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Adds filter condition. "
+":raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#filter\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 0cedba8426f8450680e355966e0aff43
+#: 3e7def648c90446c827ccc76758d1a35 4a34e36aed304a0cb080c10757a3e29b
+#: 572d34aaac30413ca3a2db452c06a62f 696a85bf06a04b60b9075a0a39a4fb86
+#: 7527c98667a04e968593ea9523b313bb aa14389a4dd743b5b5d5cd5e9efc2f3e
+#: adb1a6523a11423faa5a3c0a1cfa47f9 b9827f9fc0c34f1d9b69e41a576c6b52
+#: e3da1d6213d14e1c90647960a2f00ccf eea7317548aa4b7ca68ed0aec3ef6234
+#: ef492deb0ce346b498c64785fac9d8b4
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Adds OR condition. :raw-"
+"html-m2r:`<a href=\"https://github.com/nestjsx/crud/wiki/Requests#or\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 04e9caa91c334725bc30b4f990a6f85c
+#: 1cc7de0b44d54136b28b7bf4008b3335 2e4ab3d725b8448f9a9676d915338610
+#: 3d5daf49b4ef4d979ae8cf4cf70ccbcd 462ad74f71c24af7a2e306a8b105209f
+#: 47dd893cfd91410da50097fd68b0bbcf 4f3cb678bc464045994eff20b9e2661e
+#: 70db3e6ee44a41f29202f2f54f3c475f 84a6440db47a4db898ddff3990e85c57
+#: 957d4ef6f3c543e58f7eb3cdbbed4f89 c3c376ecfa2c4fc9b06539d6d52dc456
+#: cc1b520f56824c06abb4aa3fb33b5db1
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Adds sort by field. :raw-"
+"html-m2r:`<a href=\"https://github.com/nestjsx/crud/wiki/Requests#sort\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 03a5a6791d834b4eb39eca60ef6941d9
+#: 047bb38a4f364905a1a3f0ca08912cad 06bb3f2ad4564de0bc78f90d70991480
+#: 10f62b89f4304516b981190b12b8e7b2 19d4cf0bc627470f8f96cc3717b521b5
+#: 226e05d27686403f8a829071dc01e160 38881ec0a44c422e8b00426d1ac45ead
+#: 3c3daed960f54e9ead589332404e16f3 44bdc2926ab94e86ac298c34428eecd0
+#: 46f0d333192c4c3eb09bef408f48bbd5 4b46961594044712b82a20883406974a
+#: 691aebcf258b4e5c861e702d688c6f32 7c395ed9c1d8424f809a9cdf752e31ff
+#: 9bc061086d094951b85aebd17e52d481 9de99bffe54c4b629914e834cf50bb85
+#: a4053ccc831c4b8281318c0d0c499925 a79f28d8b82d472e8f5ce81583fad705
+#: b4048da68b7a4632a1d32a3b910662e2 b9457fa3c6ca48b7b9291aeeb1190514
+#: bb7b031c966e43e8baf61e491d94071f eb222c9c809747b78518f1317d40f5d4
+#: f4ce2fcfd72744f48d51b5257205e859 f766312c90624acf8da47ceeaeae28e5
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Adds relational resources."
+" :raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#join\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 023c7fdfbc474f39817d7d2c1791d062
+#: 058ac827a63c43d59b5c194704a46e93 178ad561a358417baa676b4392d1a66f
+#: 1fd4f9f502564e259cc4101a6dac9e06 2ef6b7abc7794f6cb4d3819a719a73a5
+#: 633c1f22ed444f90b7e56aaede06b863 96d317a8360848bfa48d423b01708ea9
+#: 9cf64f2306dd4dffad70606de1b3ecd2 c7af670ab0dd49e1b0a7d46ee5e81905
+#: cc9f3aaab1ea4b8f9eb4a87298173e15 d3471b37edb64d01911412b6e967db7a
+#: ecc72abe0fd44722922d7846222d27c1
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Limit amount of resources."
+" :raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#limit\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 16c3eb4307114f6fb889f9102f9d9fcc
+#: 1c7f27d4279241fda443d66c6556ebe6 2d51f6f6c9e141f3865d0cdd69b6c9aa
+#: 67ae68ebff764b02a8aaa23a9031613b 71ce5f4f0cbf4887a105c8592ecd294c
+#: 7365ef027cbd49a0adba9b5245e2968d ad42fa75d7654a5d8dab56d7938d3ec0
+#: bc3b09e73c0c4d56b4ed6c59e3cd6a59 c7a5c203cbcb4ee897a5807bd80334b1
+#: c83f7e4ee1864cb4bf133ed9842322ec d24beece0c964bfda0b6a78430640fb0
+#: e19b2d964a704e9ca4d2d4501f0bc783
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Offset amount of "
+"resources. :raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#offset\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 255ef500eba4405eb4994c20b5b798ce
+#: 36f34b638ee9426d928da16dfee4525f 78e0a418a44d4c5784c62f9dac2ea1be
+#: a2de85a498aa433eaa19aba8b04c79b1 a8eede5cf6fd4b2eb4ac911d337e9ace
+#: b7b61670282445f79b0ca33f70ddc08b b9214f92aecc4a2d9059a2bb9be9ef2e
+#: bd6d6d0116fe45adbb3879b21c00480b bee50a2c0a01435eacee310a133089d1
+#: c8c8516d50c84448bd23ecca56c969fb e0fb1184e0324c55be5a944b13e93d34
+#: ecd1348661614086a1af8c73bcffe6cb
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Page portion of resources."
+" :raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#page\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 00cff204e6774226b038cb6e7d46a87b
+#: 178226a1959846aa9366e69b88f014a8 3634dbf4f50c46eab4f568769f1ab107
+#: 38a8eabb65374e9abf801c7cfa04572c 4d9a2264d5e9424a92ab41f466b1a298
+#: 50e4816fbc78461cab506c96b50205b5 5685452df6cf431381130f2f9f099529
+#: 62616874be0c4dd186855e940126628c 7f5b2c7285244b9a9e3afb419dba147f
+#: 80199c388593405a8d3837b8e1157315 801f0742d53c457a926413371ca7184c
+#: 81d164d30d354453bce5eb43b1b51195 9e1aae1ace704969a7a628b14c0923e2
+#: a06ffc7388374e1ab33d88cef52bc2ad b0af3ca503eb4d55aba5dc7f7193001b
+#: d637d9598b61461ebb48fd546ea49879 e235b0865e704fc9b45b04f22dbfa681
+#: e2dcf141a50d4714b3fe52a9202649bb e74a00789e944e7d8b7a0066dd5369bd
+#: e78bc4d504674c0cb240451efb366aae ea6bdc22b0e24feaa419ec5fe5f22542
+#: ec07ae3564214e94b7ac07ec91788a3d f19e6b367f0e4c72928cfae14e8450cc
+msgid ""
+".. role:: raw-html-m2r(raw)    :format: html   Reset cache (if was "
+"enabled). :raw-html-m2r:`<a "
+"href=\"https://github.com/nestjsx/crud/wiki/Requests#cache\" "
+"target=\"_blank\">Docs</a>`"
+msgstr ""
+
+#: ../../<openapi>:1 b88e90b57d7542219195a55673809fbf
+msgid "**Update one Media**"
+msgstr ""
+
+#: ../../<openapi>:1 1cbce0e93b5e4c79a8618b57048e892a
+#: 940352a62c3145b99e8e873295cacf3e
+msgid "**Retrieve one Media**"
+msgstr ""
+
+#: ../../<openapi>:1 6f12358e38984b30bf21ff415717a113
+msgid "**Delete one Media**"
+msgstr ""
+
+#: ../../<openapi>:1 2bd0a962edc446bea71cbbb9afdb9168
+msgid "**Update one Order**"
+msgstr ""
+
+#: ../../<openapi>:1 ba184e0cb03647d4b91e693298c04250
+#: fc67e103be3442b4854d7500b03f62af
+msgid "**Retrieve one Order**"
+msgstr ""
+
+#: ../../<openapi>:1 b8abd0c54bab4aa2a5c5924564937b8f
+msgid "**Create one Order**"
+msgstr ""
+
+#: ../../<openapi>:1 378cbfc9e4f14826b85b41694707e5f2
+#: 60b8ae7493594846bc8c91d271b46bde
+msgid "**Retrieve many Order**"
+msgstr ""
+
+#: ../../<openapi>:1 7eaa1cb2275d47e6beeff25829b43b15
+msgid "**Retrieve one Partner**"
+msgstr ""
+
+#: ../../<openapi>:1 f852e1afa62d41bd965aac3cece5da4c
+msgid "**Update one Partner**"
+msgstr ""
+
+#: ../../<openapi>:1 d81783d81b9c4de0bbc45c349030249e
+msgid "**Delete one Partner**"
+msgstr ""
+
+#: ../../<openapi>:1 a51fc7aab5284d4d98df36bbfb6ef3a4
+msgid "**Retrieve many Partner**"
+msgstr ""
+
+#: ../../<openapi>:1 ef84460564c8421eb7350da9802da137
+msgid "**Create one Partner**"
+msgstr ""
+
+#: ../../<openapi>:1 407d92bd2ac9402389ff4f7b155febea
+#: 72c0894932024329b3efa9ce138cb5a5
+msgid "**Retrieve one Plan**"
+msgstr ""
+
+#: ../../<openapi>:1 2afcc5c45ce84af182209e5010a2f5e0
+msgid "**Update one Plan**"
+msgstr ""
+
+#: ../../<openapi>:1 bd7e2daf28b14acb944cd7d481b96a62
+msgid "**Replace one Plan**"
+msgstr ""
+
+#: ../../<openapi>:1 a27d5a63d908446f95ab7260ec3c9112
+msgid "**Delete one Plan**"
+msgstr ""
+
+#: ../../<openapi>:1 bce1ba722a1c4679a08ff743352a98f2
+msgid "**Create one Plan**"
+msgstr ""
+
+#: ../../<openapi>:1 19840d2d417a4737bc96a1d11d00b1ed
+#: c0c60b8b795149e8bb5beef75c9939f4
+msgid "**Retrieve many Plan**"
+msgstr ""
+
+#: ../../<openapi>:1 451e4ac1c7c148be91b3347ad6fc62b7
+msgid "**Retrieve many Product**"
+msgstr ""
+
+#: ../../<openapi>:1 d92981800c4446b8a6f6a9c66b5af11c
+msgid "**Create one Product**"
+msgstr ""
+
+#: ../../<openapi>:1 d2e7ce5ae7d74f8f85198450866b1686
+msgid "**Update one Product**"
+msgstr ""
+
+#: ../../<openapi>:1 5076fc577eee4e3381726b31cfa6e281
+msgid "**Delete one Product**"
+msgstr ""
+
+#: ../../<openapi>:1 d2b784dddcc747caa2aea69d89b0e4b6
+msgid "**Create one Project**"
+msgstr ""
+
+#: ../../<openapi>:1 98225f65bc0e46d6a7afd2c0083ad26e
+msgid "**Update one Project**"
+msgstr ""
+
+#: ../../<openapi>:1 d2424ef5a23545759f60aabd9d0ed664
+msgid "**Delete one Project**"
+msgstr ""
+
+#: ../../<openapi>:1 d3424764f5684c04bf432521f0b4322b
+msgid "**Retrieve one Project**"
+msgstr ""
+
+#: ../../<openapi>:1 9215761871ea4528b2dfb4f6bcbf560e
+msgid "**Retrieve many Project**"
+msgstr ""
+
+#: ../../<openapi>:1 7cb68c5e6c234d658c368638b58d54a9
+#: e1f69b9eeda740caa0130eecee1b3678
+msgid "**Retrieve one User**"
+msgstr ""
+
+#: ../../<openapi>:1 dd93d1eff19e4ad7bb9dcf913224f398
+msgid "**Update one User**"
+msgstr ""
+
+#: ../../<openapi>:1 69b83d6fae5c4d389c6b740c9f8c43e9
+msgid "**Replace one User**"
+msgstr ""
+
+#: ../../<openapi>:1 92a4e7b836f144898efb5b2129abbf5d
+msgid "**Delete one User**"
+msgstr ""
+
+#: ../../<openapi>:1 0627eb0bf6c8441c898b29e59f7c67ed
+#: d10b08a17bf94593b5054aec3e978430
+msgid "**Retrieve many User**"
+msgstr ""
+
+#: ../../<openapi>:1 16230f9eef2b4031868f4f550507e0d0
+msgid "**Create one User**"
+msgstr ""
+
+#: ../../<openapi>:1 7ce8dc631e3b47b7862ea17725d25fdd
+msgid "**Create one Template**"
+msgstr ""
+
+#: ../../<openapi>:1 91ce81c3dea94dab857f665998c5ba6e
+msgid "**Retrieve many Template**"
+msgstr ""
+
+#: ../../<openapi>:1 902e8f24b17e4a918bab6caed2661042
+msgid "**Update one Template**"
+msgstr ""
+
+#: ../../<openapi>:1 56c61f3c09094dc4ad0d6fe5587e6377
+msgid "**Retrieve one Template**"
+msgstr ""
+
+#: ../../<openapi>:1 90a4112cabc8497bb10e172131e5a173
+msgid "**Delete one Template**"
+msgstr ""
+
+#: ../../<openapi>:1 38b8860494c74bc58f2228ab188dfaba
+msgid "**Retrieve one Payment**"
+msgstr ""
+
+#: ../../<openapi>:1 cff4d2b5732344e5a3699768312e7ede
+msgid "**Create one Payment**"
+msgstr ""
+

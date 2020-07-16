@@ -36,7 +36,9 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinxcontrib.openapi',
-    'sphinxcontrib.redoc'
+    'sphinxcontrib.redoc',
+    'sphinx_copybutton',
+    # 'sphinxcontrib-inlinesyntaxhighlight'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -47,13 +49,37 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+gettext_uuid = True
+gettext_compact = False
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+# html_theme = 'alabaster'
+
+html_theme = 'sphinx_rtd_theme'
+
+html_theme_options = {
+    'canonical_url': '',
+    'analytics_id': 'UA-XXXXXXX-1',
+    'logo_only': True,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    # 'vcs_pageview_mode': '',
+    'style_nav_header_background': '#3F9984',
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
+
+html_logo = '_static/images/kazaplan.svg'
+
+
 # html_theme = 'bootstrap'
 # html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
@@ -61,6 +87,14 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/index.css',
+]
+
+html_js_files = [
+    'js/index.js'
+]
 
 # redoc = [
 #     {

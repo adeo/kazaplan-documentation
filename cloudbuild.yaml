@@ -5,3 +5,5 @@ steps:
   - name: node
     entrypoint: yarn
     args: ['build']
+  - name: gcr.io/cloud-builders/gsutil
+    args: ["-m", "rsync", "-r", "-c", "-d", "./build/*", "gs://developer.kazaplan.com"]

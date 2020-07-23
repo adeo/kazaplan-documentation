@@ -1,4 +1,5 @@
 import React from 'react';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import merge from 'lodash.merge';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import './style.css';

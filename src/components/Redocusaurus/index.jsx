@@ -1,9 +1,12 @@
 import React from 'react';
 import merge from 'lodash.merge';
-import { RedocStandalone } from 'redoc';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import './style.css';
 
+let RedocStandalone = () => <div></div>;
+if (ExecutionEnvironment.canUseDOM) {
+  RedocStandalone = require('redoc').RedocStandalone;
+}
 /**
  * NOTE: Colors taken from `node_modules/infima/styles/common/dark-mode.css`
  * and related files
@@ -96,7 +99,6 @@ function getThemeOptions(isDarkMode) {
  * }} props
  */
 function Redocusaurus(props) {
-  console.log(useThemeContext())
   const { isDarkTheme } = useThemeContext();
   const theme = getThemeOptions(isDarkTheme);
 

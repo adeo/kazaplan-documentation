@@ -12,7 +12,7 @@ their Kazaplan account throught differents possible scenarios.
 
 You need to store kazaplan ***access_token***, ***refresh_token*** and ***kazaplan_id*** in your user database.
 
-Use an unique kazaplan authentication url (e.g: ***/kazaplan/enroll***) and set it to [widget options](setup.md#options).
+Use an unique kazaplan authentication url (e.g: ***/kazaplan/enroll***) and set it to [widget options](/docs/advanced_setup#options).
 
 ## Scenarios
 

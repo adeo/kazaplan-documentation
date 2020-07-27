@@ -8,11 +8,41 @@ module.exports = {
   favicon: 'img/favicon/favicon.ico',
   organizationName: 'kazaplan',
   projectName: 'Kazaplan',
+  plugins: [
+    // '@docusaurus/plugin-google-analytics',
+    // [
+    //   '@docusaurus/plugin-pwa',
+    //   {
+    //     debug: true,
+    //     offlineModeActivationStrategies: ['appInstalled', 'queryString'],
+    //     pwaHead: [
+    //       {
+    //         tagName: 'link',
+    //         rel: 'icon',
+    //         href: '/img/logo.svg',
+    //       },
+    //       {
+    //         tagName: 'link',
+    //         rel: 'manifest',
+    //         href: '/manifest.json', // your PWA manifest
+    //       },
+    //       {
+    //         tagName: 'meta',
+    //         name: 'theme-color',
+    //         content: 'rgb(63, 153, 132)',
+    //       },
+    //     ],
+    //   },
+    // ],
+  ],
   themeConfig: {
     algolia: {
       apiKey: '36d5c582881ec9289479686369dbd880',
       indexName: 'kazaplan',
     },
+    // googleAnalytics: {
+    //   trackingID: 'UA-141789564-1'
+    // },
     navbar: {
       title: 'Kazaplan',
       logo: {
@@ -44,14 +74,6 @@ module.exports = {
             {
               label: 'Getting Started',
               to: 'docs/',
-            },
-            {
-              label: 'Setup',
-              to: 'docs/setup/',
-            },
-            {
-              label: 'Account Linking',
-              to: 'docs/account_linking/',
             },
           ],
         },
@@ -88,72 +110,14 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
-    ],
-    [
-      '@docusaurus/plugin-pwa',
-      {
-        debug: true,
-        offlineModeActivationStrategies: ['appInstalled', 'queryString'],
-        // swRegister: false,
-        swCustom: path.resolve(__dirname, 'src/sw.js'),
-        pwaHead: [
-          {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/docusaurus.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/manifest.json',
-          },
-          {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-capable',
-            content: 'yes',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-status-bar-style',
-            content: '#000',
-          },
-          {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: '/img/docusaurus.png',
-          },
-          {
-            tagName: 'link',
-            rel: 'mask-icon',
-            href: '/img/docusaurus.svg',
-            color: 'rgb(62, 204, 94)',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileImage',
-            content: '/img/docusaurus.png',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileColor',
-            content: '#000',
-          },
-        ],
       },
     ],
   ],

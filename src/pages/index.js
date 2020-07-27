@@ -6,8 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-console.log(styles)
-
 const features = [
   {
     title: <>Easy widget integration</>,

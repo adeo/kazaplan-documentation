@@ -1,6 +1,11 @@
 module.exports = {
-  someSidebar: {
-    Kazaplan: ['env', 'widget', 'doc3'],
-    Features: ['mdx'],
+  sidebar: {
+    'Kazaplan': [
+      'introduction',
+    ],
+    'Getting Started': [
+      'setup',
+      'account_linking'
+    ],
   },
 };

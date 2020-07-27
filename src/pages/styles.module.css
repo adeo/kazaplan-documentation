@@ -8,23 +8,29 @@
 .heroBanner {
   background: url(/img/home-background.jpg) center no-repeat;
   background-size: cover;
-  padding: 4rem 0;
+  padding: 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .heroBannerContainer {
   background: rgba(51, 51, 51, 0.3);
   margin: 0;
-  width: 100%;
+  width: auto;
   max-width: none;
-  padding: 25px 0;
+  padding: 8rem 6rem;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 0rem;
+  }
+
+  .heroBannerContainer {
+    width: 100%;
   }
 }
 

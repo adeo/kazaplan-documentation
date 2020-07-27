@@ -37,16 +37,3 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
-
-.heroBanner_src-pages- {
-  background: url(/img/home-background.jpg) center no-repeat;
-  background-size: cover;
-}
-
-.heroBanner_src-pages- .container {
-  background: rgba(51, 51, 51, 0.3);
-  margin: 0;
-  width: 100%;
-  max-width: none;
-  padding: 25px 0;
-}

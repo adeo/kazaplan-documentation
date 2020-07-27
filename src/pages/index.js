@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: <>Full Mode Integration</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/widget.png',
     description: (
       <>
         With a full integration, you can link the customer account with Kazaplan user account.
@@ -66,7 +66,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--secondary button--lg',
+                'button button--primary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>

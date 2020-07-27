@@ -1,11 +1,14 @@
 module.exports = {
   sidebar: {
-    'Kazaplan': [
-      'introduction',
-    ],
     'Getting Started': [
+      'getting_started_introduction',
       'setup',
-      'account_linking'
     ],
+    // 'Basic Usage': [
+    //   'basic_introduction'
+    // ],
+    'Advanced Usage': [
+      'account_linking'
+    ]
   },
 };

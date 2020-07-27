@@ -78,7 +78,7 @@ onKazaplanEvent: function(name, status, data) { },
 | config\.plan\.id                    | integer \| null | If editing a plan, its id, or null for starting a new plan                                                                        |
 | config\.plan\.mode                  | string \| null  | Enter the plan in "room" mode \(e\.g\. mode: "bathroom"\)                                                                         |
 | environment\(Required\)             | string          | test or production, this defines which catalogs Kazaplan will get from the Backoffice                                             |
-| authentication\.url \(Required\)    | string          | Your authentication URL, if defined, it will be loaded in a full page modal when no token was provided when trying to save a plan |
+| uthentication\.url \(Required\)    | string          | Your authentication URL, if defined, it will be loaded in a full page modal when no token was provided when trying to save a plan |
 | authentication\.iframe\.title       | string          | The title of the authentication modal                                                                                             |
 | onReady                             | function        | Called when Kazaplan was successfully loaded                                                                                      |
 | onKazaplanEvent                     | function        | Called on various Kazaplan events, see dedicated documentation \(events describe below\)                                          |

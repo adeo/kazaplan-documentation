@@ -10,20 +10,13 @@ their Kazaplan account throught differents possible scenarios.
 
 ### Technical Prerequisite
 
-You need to store in your user database kazaplan access / refresh token
-and kazaplan user id.
+You need to store kazaplan ***access_token***, ***refresh_token*** and ***kazaplan_id*** in your user database.
 
-Create an unique kazaplan authentication url (e.g: `/kazaplan/enroll`) and set it to widget options.
-
-See also [Widget Options](setup.md#options)
-
----
+Use an unique kazaplan authentication url (e.g: ***/kazaplan/enroll***) and set it to [widget options](setup.md#options).
 
 ## Scenarios
 
-In all scenarios below, you have to set [`authentication.url`](setup.md#options) to **ht<span>tps://w</span>ww.yourwebsite.com/kazaplan/enroll**
-
-### Scenario 1
+### User is not registred on both your website and kazaplan
 
 User is not login / registred on your website and doesn't have Kazaplan
 account and create a new plan. In this case `config.token` is null or

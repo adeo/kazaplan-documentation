@@ -15,13 +15,13 @@ and kazaplan user id.
 
 Create an unique kazaplan authentication url (e.g: `/kazaplan/enroll`) and set it to widget options.
 
-See also [Widget Options](widget.md#options)
+See also [Widget Options](setup.md#options)
 
 ---
 
 ## Scenarios
 
-In all scenarios below, you have to set [`authentication.url`](widget.md#options) to **ht<span>tps://w</span>ww.yourwebsite.com/kazaplan/enroll**
+In all scenarios below, you have to set [`authentication.url`](setup.md#options) to **ht<span>tps://w</span>ww.yourwebsite.com/kazaplan/enroll**
 
 ### Scenario 1
 

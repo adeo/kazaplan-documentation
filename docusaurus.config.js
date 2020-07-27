@@ -46,8 +46,8 @@ module.exports = {
               to: 'docs/',
             },
             {
-              label: 'Widget Integration',
-              to: 'docs/widget/',
+              label: 'Setup',
+              to: 'docs/setup/',
             },
             {
               label: 'Account Linking',

@@ -22,10 +22,6 @@
   --ifm-color-secondary-lighter: #ffa626;
   --ifm-color-secondary-lightest: #ffb64d;
   --ifm-code-font-size: 95%;
-  --ifm-footer-background-color:  #303846;
-  --ifm-footer-color:  #ffffff;
-  --ifm-footer-link-color:  #ff9600;
-  --ifm-footer-title-color:  #fff;
 }
 
 .footer--dark {

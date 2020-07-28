@@ -43,6 +43,10 @@ onReady: function() { },
 onKazaplanEvent: function(name, status, data) { },
 ```
 
+:::info
+To get your partnerKey please See [Environment Access section](/docs/env_access)
+:::
+
 ![Kazaplan starterscreen in a full-integrated webpage (with header)](/img/starterscreen.png)
 
 ## Options
@@ -57,3 +61,5 @@ onKazaplanEvent: function(name, status, data) { },
 | environment\(Required\)             | string          | test or production, this defines which catalogs Kazaplan will get from the Backoffice                                             |
 
 For an advanced usage see [Advanced Setup Guide](/docs/advanced_setup)
+
+# You're done :)

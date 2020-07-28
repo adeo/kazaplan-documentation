@@ -37,3 +37,7 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+img {
+  border: 1px solid var(--ifm-toc-border-color)
+}

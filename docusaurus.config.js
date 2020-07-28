@@ -37,6 +37,7 @@ module.exports = {
   ],
   themeConfig: {
     algolia: {
+      appId: 'QFJP7AE69S',
       apiKey: '36d5c582881ec9289479686369dbd880',
       indexName: 'kazaplan',
     },

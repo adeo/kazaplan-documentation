@@ -120,14 +120,14 @@ This will set the token to Kazaplan instance and close the authentication modal 
 
 Else, redirect user to Kazaplan autorization server URL ([Environment Access](/docs/env_access)) (by passing connected user email in query parameters) to link his account.
 
-*Example*
+*Authorize request example*
 
-```
+```bash
 https://www.kazaplan.com/oauth/authorize?
     client_id=[CLIENT_ID]&
     client_secret=[CLIENT_SECRET]&
-    scope=partner:users user partner:wanaplans partner user:wanaplans
-    redirect_uri=https://www.mywebsite.com/kazaplan/callback
+    scope=partner:users user partner:wanaplans partner user:wanaplans&
+    redirect_uri=https://www.mywebsite.com/kazaplan/callback&
     response_type=code&
     email=user@email.com&
     state=1234
@@ -149,7 +149,7 @@ To handle the case of user is not logged in or registred, you need to rediect us
 
 ### OAuth Callback (redirect_uri)
 
-Once user authorize your application, he will be redirect to your `redirect_uri` define as auery parameter in authorize URL.
+Once user authorize your application to access its data, he will be redirect to your `redirect_uri` define as auery parameter in authorize URL.
 
 Here you have to :
 - Get user tokens pair by calling API
@@ -187,7 +187,7 @@ public function oauthCallback(Request $request)
 `$this->kazaplanManager->getTokensFromAuthorizationCode()` call Kazaplan API `/oauth/token` endpoint.
 
 ```
-curl --location --request POST 'https://preprodapi.kazaplan.com/oauth/token?grant_type=authorization_code' \
+curl --location --request POST 'https://api.kazaplan.com/oauth/token?grant_type=authorization_code' \
      --header 'Content-Type: application/x-www-form-urlencoded' \
      --header 'Authorization: Basic RGVtb0FwcDo1ZDljYWUxZTgwZjY0' \
      --data-urlencode 'grant_type=authorization_code' \
@@ -203,12 +203,17 @@ curl --location --request POST 'https://preprodapi.kazaplan.com/oauth/token?gran
 }
 ```
 
+:::info
+The Authorization Basic header is simply this base64 encoded string "CLIENT_ID:CLIENT_SECRET"
+:::
+
 `$this->kazaplanManager->getUser($accessToken)` call Kazaplan API `/v3/users` endpoint.
 
-```
+```bash
 curl --location --request GET 'https://api.kazaplan.com/v3/users' \
      --header 'Authorization: Bearer [...]' \
 ```
+
 ```json
 {
     "id": 2421880,
@@ -237,3 +242,86 @@ curl --location --request GET 'https://api.kazaplan.com/v3/users' \
 At this point user account is linked to its kazaplan account.
 
 ### Handle expired / invalid `config.token`
+
+:::caution
+It's very important to handle this case so that the user does not lose any changes.
+:::
+
+It could happen that kazaplan user access token is expired, and you need to get a fresh token by calling Kazaplan API, and persist it to kazaplan instance.
+
+You need to expose a `/kazaplan/refresh_token` accessible from your javascript, and call Kazaplan API
+
+*API Call example*
+
+```bash
+curl --location --request POST 'https://api.kazaplan.com/oauth/token' \
+     --header 'Content-Type: application/x-www-form-urlencoded' \
+     --header 'Authorization: Basic RGVtb0FwcDo1ZDljYWUxZTgwZjY0' \
+     --header 'Cookie: SERVERID=web1' \
+     --data-urlencode 'grant_type=refresh_token' \
+     --data-urlencode 'refresh_token=[...]'
+```
+
+```json
+{
+    "access_token": "[...]",
+    "token_type": "Bearer",
+    "expires_in": 604799,
+    "refresh_token": "[...]",
+    "scope": "[...]"
+}
+```
+
+*Refresh token function on client side*
+
+```javascript
+const refreshToken = async () => {
+    try {
+        const URL = 'https://www.yourwebsite.com/kazaplan/refresh_token'
+        const response = await fetch(URL, {
+            method: 'POST',
+            mode: 'cors',
+            cache: 'no-cache',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            redirect: 'follow',
+            referrerPolicy: 'no-referrer',
+            body: JSON.stringify({})
+        });
+        return await response.json();
+    } catch(e) {
+        throw e
+    }
+};
+```
+
+`onKazaplanEvent` is a function defined in [Widget Options](/docs/advanced_setup#options)
+
+```javascript
+onKazaplanEvent: async function (name, status, data) {
+    // User finish authorization process and Kazaplan received a new token
+    // Continue the saving action
+    if (name === 'login' && status === 'tokenReceived') {
+        kazaplanInstance.apiUserSave();
+    }
+
+    // User try to create / save or duplicate a plan with an invalid access token
+    if([
+        'newPlan',
+        'editPlan',
+        'duplicatePlan'
+    ].indexOf(name) !== -1 && status === 'unauthorized') {
+        try {
+            const { access_token } = await refreshToken() || {};
+            if (access_token) {
+                kazaplanInstance.apiSetToken(access_token);
+                kazaplanInstance.apiUserForceSave();
+            }
+        } catch(e) { }
+    }
+}
+```
+
+See also [Events](/docs/events)

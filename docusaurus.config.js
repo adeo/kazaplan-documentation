@@ -58,10 +58,20 @@ module.exports = {
           position: 'left',
         },
         {
-          to: "api/",
           activeBasePath: "api",
           label: "API Reference",
           position: "left",
+          items: [
+            {
+              label: 'API v3 (current)',
+              to: "api/v3",
+            },
+            {
+              label: 'API v4 (next)',
+              to: "api/v4",
+            },
+            // ... more items
+          ],
         },
         
       ],

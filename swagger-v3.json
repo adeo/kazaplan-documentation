@@ -1,0 +1,558 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "version": "3.0.0",
+        "title": "Kazaplan API",
+        "description": "Kazaplan API v3",
+        "termsOfService": "",
+        "contact": {
+            "name": "Fabien Ryckoort",
+            "email": "fabien.ryckoort@adeo.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "servers": [
+        {
+            "url": "https://preprodapi.kazaplan.com/v3",
+            "description": "Preproduction server"
+        },
+        {
+            "url": "https://api.kazaplan.com/v3",
+            "description": "Production server"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        },
+        "schemas": {
+            "User": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "gender": {
+                        "type": "integer"
+                    },
+                    "firstName": {
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "type": "string"
+                    },
+                    "address": {
+                        "type": "string"
+                    },
+                    "city": {
+                        "type": "string"
+                    },
+                    "phone": {
+                        "type": "string"
+                    },
+                    "postalCode": {
+                        "type": "string"
+                    },
+                    "countryId": {
+                        "type": "integer"
+                    },
+                    "countryCode": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    },
+                    "nbPlans": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Plan": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "partnerId": {
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    },
+                    "deleted_at": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "userId": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "version": {
+                        "type": "string"
+                    },
+                    "custom_id": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "last_name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "first_name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "postal_code": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "phone": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "isTemplate": {
+                        "type": "boolean"
+                    },
+                    "medias": {
+                        "type": "object"
+                    }
+                }
+            },
+            "PlansLists": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "page": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "count": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "pages": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "_links": {
+                        "$ref": "#/components/schemas/PageLinks"
+                    },
+                    "results": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Plan"
+                        },
+                        "description": ""
+                    }
+                }
+            },
+            "PageLinks": {},
+            "ErrorBadRequest": {},
+            "ErrorForbidden": {},
+            "ErrorNotFound": {},
+            "ErrorUnauthorized": {},
+            "ErrorUnauthorizedInvalidToken": {}
+        }
+    },
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ],
+    "paths": {
+        "/plans/lists": {
+            "get": {
+                "tags": [
+                    "plans"
+                ],
+                "description": "Returns lists of plans",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "user[]",
+                        "description": "Array of users ID",
+                        "in": "query",
+                        "required": true,
+                        "explode": "true,",
+                        "schema": {
+                            "type": "integer",
+                            "example": 1234
+                        }
+                    },
+                    {
+                        "name": "id[]",
+                        "description": "Array of plans ID",
+                        "in": "query",
+                        "explode": "true,",
+                        "schema": {
+                            "type": "integer",
+                            "example": 1234
+                        }
+                    },
+                    {
+                        "name": "orderBy",
+                        "description": "Field to order by",
+                        "in": "query",
+                        "style": "deepObject",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "created_at": {
+                                    "type": "string"
+                                },
+                                "updated_at": {
+                                    "type": "string"
+                                }
+                            },
+                            "example": {
+                                "created_at": "DESC"
+                            }
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "description": "Limit amount of resources",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "default": 20
+                        }
+                    },
+                    {
+                        "name": "page",
+                        "description": "Offset amount of resources",
+                        "in": "query",
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "default": 1
+                        }
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": [
+                            "partner"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of plan",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PlansLists"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorBadRequest"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/plans/update/title/{id}": {
+            "put": {
+                "tags": [
+                    "plans"
+                ],
+                "description": "Put update title",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "required": true
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": [
+                            "user:wanaplans"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Response update title",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "schema": {
+                            "$ref": "#/components/schemas/ErrorBadRequest"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/components/schemas/ErrorUnauthorizedInvalidToken"
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "schema": {
+                            "$ref": "#/components/schemas/ErrorForbidden"
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/plans/{id}.png": {
+            "get": {
+                "tags": [
+                    "plans"
+                ],
+                "description": "Return png of plan",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Image of plan",
+                        "content": {
+                            "image/png": {
+                                "schema": null,
+                                "type": "string",
+                                "format": "binary"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not found",
+                        "schema": {
+                            "$ref": "#/components/schemas/ErrorNotFound"
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/plans/{id}": {
+            "get": {
+                "tags": [
+                    "plans"
+                ],
+                "description": "Return plan",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An object of plan",
+                        "schema": {
+                            "$ref": "#/components/schemas/Plan"
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/users": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "description": "Returns user by token",
+                "produces": "application/json",
+                "security": [
+                    {
+                        "bearerAuth": [
+                            "user:wanaplans"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An object of user",
+                        "schema": {
+                            "$ref": "#/components/schemas/User"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/components/schemas/ErrorUnauthorized"
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/users/plans": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "description": "Returns lists of plans by user token",
+                "produces": [
+                    "application/json"
+                ],
+                "security": [
+                    {
+                        "bearerAuth": [
+                            "user:wanaplans"
+                        ]
+                    }
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "page",
+                        "schema": null,
+                        "type": "integer",
+                        "required": false
+                    },
+                    {
+                        "in": "path",
+                        "name": "limit",
+                        "schema": null,
+                        "type": "integer",
+                        "required": false
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of plans",
+                        "schema": {
+                            "$ref": "#/components/schemas/PlansLists"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/components/schemas/ErrorUnauthorizedInvalidToken"
+                        }
+                    }
+                }
+            }
+        },
+        "/v3/users/{id}": {
+            "get": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "Returns user by id",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "required": true
+                    }
+                ],
+                "security": [
+                    {
+                        "bearerAuth": [
+                            "partner:admin"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An object of user",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorUnauthorizedInvalidToken"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": []
+}

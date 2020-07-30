@@ -8,7 +8,7 @@ function APIDocs() {
     title={`API Docs`}
     description={`Open API Reference Docs for the API v3`}
   >
-    <Redocusaurus spec="../../swagger-v3.json" />
+    <Redocusaurus spec="/swagger-v3.json" />
   </Layout>
   );
 }
